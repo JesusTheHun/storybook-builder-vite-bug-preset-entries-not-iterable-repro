@@ -1,14 +1,4 @@
 module.exports = {
-  async viteFinal(config) {
-    config.optimizeDeps.include.push(
-        '@storybook/addon-actions',
-        'msw-storybook-addon',
-        '@storybook/addons',
-        'msw',
-        'is-node-process',
-    );
-    return config;
-  },
   "stories": [
     "../src/**/*.stories.mdx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)"
